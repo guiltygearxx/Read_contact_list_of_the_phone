@@ -10,7 +10,8 @@ public class MainActivity extends AppCompatActivity {
             R.color.red, R.color.pink, R.color.purple, R.color.black, R.color.blue, R.color.green,
             R.color.yellow, R.color.orange, R.color.brown, R.color.grey, R.color.white};
 
-    private String[] arrayNameColorVN = {
+
+    private String[] data_test_Name_contact = {
             "Nam", "Hồng", "Hoàng", "Ngọc", "Dương", "Nhung", "Hà", "Cam",
             "Phương", "Thảo", "Thiện"
     };
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        contactAdapter = new ContactAdapter(this,arrayNameColorVN,arrayColor);
+        contactAdapter = new ContactAdapter(this,data_test_Name_contact,arrayColor);
         lv_contact = findViewById(R.id.lv_contact);
 
         lv_contact.setAdapter(contactAdapter);
